@@ -1,0 +1,47 @@
+$darkColor: #303030;
+$lightColor: #fff;
+$blueColor: #15c5bd;
+
+body {
+  background-color: $darkColor;
+  & #card {
+    background-color: $lightColor;
+  }
+}
+.fab {
+  color: $blueColor;
+  font-size: 50px;
+}
+
+.btn {
+  background-color: $blueColor;
+  border-color: $lightColor;
+  &:hover {
+    color: $blueColor;
+    background-color: $lightColor;
+    border-color: $blueColor;
+  }
+  width: 208px;
+}
+
+btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: $blueColor;
+  background-color: $lightColor;
+  border-color: $blueColor;
+}
+
+.form-control {
+  border-color: $blueColor;
+  &:focus {
+    box-shadow: 0 0 0 0.1rem $blueColor !important;
+  }
+}
+
+.custom-select {
+  border-color: $blueColor;
+  &:focus {
+    box-shadow: 0 0 0 0.1rem $blueColor !important;
+  }
+}
