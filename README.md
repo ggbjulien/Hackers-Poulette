@@ -1,5 +1,5 @@
 # Hackers-Poulette
-                    <img src="assets/img/hackers-poulette-logo.png" width="50%" height="50%"></img>
+
 Formulary challenge at Becode(3days)
 
 - [WebPage](https://ggbjulien.github.io/restaurant-css-framework/)
@@ -8,9 +8,9 @@ Formulary challenge at Becode(3days)
 
 ## Mock-Up
 
-<img src="assets/img/mobile.png" width="50%" height="50%"></img>
-<img src="assets/img/tablet.png" width="50%" height="50%"></img>
-<img src="assets/img/desktop.png" width="50%" height="50%"></img>
+<img src="assets/img/mobile.png" width="50%" height="50%"></img> <img src="assets/img/tablet.png" width="50%" height="50%"></img> <img src="assets/img/desktop.png" width="50%" height="50%"></img>
+
+
 
 
 ## Built With
