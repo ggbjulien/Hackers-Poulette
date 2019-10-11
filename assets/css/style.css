@@ -48,4 +48,9 @@ btn-primary:not(:disabled):not(.disabled).active,
   -webkit-box-shadow: 0 0 0 0.1rem #15c5bd !important;
           box-shadow: 0 0 0 0.1rem #15c5bd !important;
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */
