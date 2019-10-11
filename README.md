@@ -1,14 +1,21 @@
 # Hackers-Poulette
 
-Formulary challenge at Becode(3days)
+Formulary challenge for training our php skills.
 
-- [WebPage](https://ggbjulien.github.io/restaurant-css-framework/)
+- [WebPage](https://hackerspoulettebros.herokuapp.com/)
 
 - Exercice rules [Hackers-Poulette](https://github.com/becodeorg/BXL-Johnson-4.14/tree/master/06-PHP/hackers_poulette)
 
+## Responsive
+
+The website is responsive and was designed for mobile first.
+
+
 ## Mock-Up
 
-<img src="assets/img/mobile.png" width="50%" height="50%"></img> <img src="assets/img/tablet.png" width="50%" height="50%"></img> <img src="assets/img/desktop.png" width="50%" height="50%"></img>
+<img src="assets/img/mobile.png" width="50%" height="50%"></img> 
+<img src="assets/img/tablet.png" width="50%" height="50%"></img> 
+<img src="assets/img/desktop.png" width="50%" height="50%"></img>
 
 ## Built With
 
