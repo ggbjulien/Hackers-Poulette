@@ -8,6 +8,7 @@ include 'form.php';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Form product with PHP SASS BOOTSTRAP at Becode" />
     <title>Hackers-Poulette Contact Formulary</title>
 
     <!-- BOOTSTRAP CDN -->
@@ -51,7 +52,7 @@ include 'form.php';
                                 <div class="col-md-6 mt-lg-4 pr-lg-5">
                                     <div class="form-group">
                                         <label for="fistname">Firstname :</label>
-                                        <input type="name" class="form-control" id="firstname" placeholder="Dark"
+                                        <input type="firstname" class="form-control" id="firstname" placeholder="Dark"
                                             name="firstname" value="<?=$_POST['firstname'] ?? "" ?>" />
 
                                         <!-- FIRSTNAME ERROR -->
@@ -62,7 +63,7 @@ include 'form.php';
                                 <div class="col-md-6 mt-lg-4 pl-lg-5">
                                     <div class="form-group">
                                         <label for="lastname">Lastname :</label>
-                                        <input type="name" class="form-control" id="lastname" placeholder="Vador"
+                                        <input type="lastname" class="form-control" id="lastname" placeholder="Vador"
                                             name="lastname" value="<?=$_POST['lastname'] ?? "" ?>" />
 
                                         <!-- LASTNAME ERROR -->
@@ -78,17 +79,17 @@ include 'form.php';
                                     <div class="gender">
                                         <div class="form-group mt-md-2">
                                             <div class="form-check checkbox-info form-check-inline">
-                                                <input class="form-check-input" type="radio" id="male" value="male"
+                                                <input class="form-check-input" type="radio" id="gender" value="male"
                                                     name="gender" />
                                                 <label class="form-check-label" for="gender">Male</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" id="female2" value="female"
+                                                <input class="form-check-input" type="radio" id="gender" value="female"
                                                     name="gender" />
                                                 <label class="form-check-label" for="gender">Female</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" id="other" value="other"
+                                                <input class="form-check-input" type="radio" id="gender" value="other"
                                                     name="gender" />
                                                 <label class="form-check-label" for="gender">Other</label>
                                             </div>
@@ -114,7 +115,7 @@ include 'form.php';
                             <div class="form-row mb-lg-2">
                                 <div class="col-md-6 mb-3 mb-lg-5 pr-lg-5">
                                     <label for="country">Country :</label>
-                                    <select class="custom-select" name="country">
+                                    <select class="custom-select" name="country" id="country">
                                         <option selected disabled>Select your country</option>
                                         <option value="AF">Afghanistan</option>
                                         <option value="AL">Albania</option>
@@ -372,7 +373,7 @@ include 'form.php';
 
                                 <div class="col-md-6 mb-3 mb-lg-5 pl-lg-5">
                                     <label for="subject">Subject :</label>
-                                    <select class="custom-select" name="subject">
+                                    <select class="custom-select" name="subject" id="subject">
                                         <option selected>Others</option>
                                         <option value="1">Job</option>
                                         <option value="2">Assistance</option>
@@ -385,7 +386,7 @@ include 'form.php';
                             </div>
                             <div class="form-group mb-lg-4">
                                 <label for="info">More information :</label>
-                                <textarea class="form-control" id="informations" rows="4"
+                                <textarea class="form-control" id="info" rows="4"
                                     name="info"><?=htmlentities($_POST['info'])?></textarea>
 
                                 <!-- INFO ERROR -->
