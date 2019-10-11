@@ -20,6 +20,10 @@ include 'form.php';
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/752b22c16a.js" crossorigin="anonymous"></script>
 
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/img/favicon.ico" />
+
+
 </head>
 
 <body>
