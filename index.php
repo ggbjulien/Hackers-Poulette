@@ -386,7 +386,7 @@ include 'form.php';
                             </div>
                             <div class="form-group mb-lg-4">
                                 <label for="info">More information :</label>
-                                <textarea class="form-control" id="info ." rows="4"
+                                <textarea class="form-control" id="info" rows="4"
                                     name="info"><?=htmlentities($_POST['info'])?></textarea>
 
                                 <!-- INFO ERROR -->
