@@ -36,10 +36,12 @@ include 'form.php';
                         <img src="assets/img/hackers-poulette-logo.png" alt="Hackers Poulettes LOGO"
                             class="logo col-8 offset-2 col-lg-12 offset-lg-0 img-fluid logo ml-lg-3" />
                         <div class="d-none d-md-none d-lg-block ml-lg-5 mt-lg-4 pt-lg-3 text-center">
-                            <a href="#"><i class="fab fa-facebook-square mr-lg-3"></i></a>
-                            <a href="#"><i class="fab fa-twitter-square mr-lg-3"></i></a>
-                            <a href="#"><i class="fab fa-linkedin mr-lg-3"></i></a>
-                            <a href="#"><i class="fab fa-instagram mr-lg-3"></i></a>
+                            <a href="https://media.giphy.com/media/l4pTdcifPZLpDjL1e/giphy.gif"><i
+                                    class="fab fa-facebook-square mr-lg-3"></i></a>
+                            <a href="https://media.giphy.com/media/4Jxa0QgHF2HSw/giphy.gif"><i
+                                    class="fab fa-twitter-square mr-lg-3"></i></a>
+                            <a href="https://github.com/webmae"><i class="fab fa-linkedin mr-lg-3"></i></a>
+                            <a href="https://github.com/Marvin-LOUIS"><i class="fab fa-instagram mr-lg-3"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-8 mt-lg-5">
