@@ -51,7 +51,7 @@ include 'form.php';
                             <div class="form-row mb-lg-5">
                                 <div class="col-md-6 mt-lg-4 pr-lg-5">
                                     <div class="form-group">
-                                        <label for="fisrtname">Firstname :</label>
+                                        <label for="firstname">Firstname :</label>
                                         <input type="firstname" class="form-control" id="firstname" placeholder="Dark"
                                             name="firstname" value="<?=$_POST['firstname'] ?? "" ?>" />
 
