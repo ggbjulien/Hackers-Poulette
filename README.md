@@ -10,9 +10,6 @@ Formulary challenge at Becode(3days)
 
 <img src="assets/img/mobile.png" width="50%" height="50%"></img> <img src="assets/img/tablet.png" width="50%" height="50%"></img> <img src="assets/img/desktop.png" width="50%" height="50%"></img>
 
-
-
-
 ## Built With
 
 - [Bootstrap](https://getbootstrap.com/) - Framework css used
@@ -20,13 +17,13 @@ Formulary challenge at Becode(3days)
 - [SCSS](https://www.w3schools.com/sass/) - Used for styling
 - [PHP](https://www.php.net/docs.php) - Used for control input from formulary
 
-## Authors
-
-- **Julien Goetghebuer** - _Initial work_ - [Ggbjulien](https://github.com/ggbjulien)
-
 ## Date
 
 - 11 october 2019 (2month at BeCode o/)
+
+## Authors
+
+- **Julien Goetghebuer** - _Initial work_ - [Ggbjulien](https://github.com/ggbjulien)
 
 ## Change Logs
 
