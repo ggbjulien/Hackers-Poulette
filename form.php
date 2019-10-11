@@ -65,10 +65,16 @@ function invalidString($value, $var) {
 }
 
 
-function error(){
+function validMail(){
     if(isset($_POST['submit'])){
         if(!empty($_POST['firstname']) AND !empty($_POST['lastname']) AND !empty($_POST['gender']) AND !empty($_POST['email']) AND !empty($_POST['country']) AND !empty($_POST['subject']) AND !empty($_POST['info'])){
-            echo " WELL PLAYED";
+            
+     $to      = $_POST['email'];
+     $subject = 'Hackers-Poulette formulary';
+     $message = 'Test mail Hackers-Poulette';
+ 
+     mail($to, $subject, $message);
+
         }
     }
 }
@@ -76,7 +82,6 @@ function error(){
 // function validation(){
     
 // }
-
 
 
 ?>

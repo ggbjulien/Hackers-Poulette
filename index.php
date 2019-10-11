@@ -404,7 +404,7 @@ include 'form.php';
             </div>
         </div>
     </section>
-
+    <?php validMail(); ?>
 </body>
 
 </html>
