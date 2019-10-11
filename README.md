@@ -8,7 +8,7 @@ Formulary challenge at Becode(3days)
 
 ## Mock-Up
 
-![](/assets/mobile.png)
+<img src="assets/img/mobile.png></img>
 
 
 ## Built With
