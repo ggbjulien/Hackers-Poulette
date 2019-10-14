@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "Bellota";
+  src: url("fonts/Bellota-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #303030;
+  font-family: "Bellota";
 }
 
 body #card {

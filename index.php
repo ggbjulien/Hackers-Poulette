@@ -9,7 +9,7 @@ include 'form.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Form product with PHP SASS BOOTSTRAP at Becode" />
-    <title>Hackers-Poulette Contact Formulary</title>
+    <title>Hackers-Poulette Support Formulary</title>
 
     <!-- BOOTSTRAP CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -46,7 +46,7 @@ include 'form.php';
                     </div>
                     <div class="col-lg-8 mt-lg-5">
                         <form method="post" class="ml-lg-3" action="">
-                            <h3 class="display-5 col-12 mb-5 text-center">Contact Us</h3>
+                            <h3 class="display-5 col-12 mb-5 text-center">Support</h3>
 
 
 
@@ -54,8 +54,8 @@ include 'form.php';
                                 <div class="col-md-6 mt-lg-4 pr-lg-5">
                                     <div class="form-group">
                                         <label for="firstname">Firstname :</label>
-                                        <input type="firstname" class="form-control" id="firstname" placeholder="Dark"
-                                            name="firstname" value="<?=$_POST['firstname'] ?? "" ?>" />
+                                        <input type="firstname" class="form-control <?= (isset($_POST['submit']) ? (empty($_POST['firstname']) ? "is-invalid" : "") : "") ?> <?= (isset($_POST['submit']) && !empty($_POST['firstname']) ? ($regExFirstname == false ? "is-invalid" : "is-valid") : "") ?>
+" id="firstname" placeholder="Dark" name="firstname" value="<?=$_POST['firstname'] ?? "" ?>" />
 
                                         <!-- FIRSTNAME ERROR -->
                                         <?php emptyField('firstname'); invalidRegEx('firstname') ?>
@@ -65,8 +65,8 @@ include 'form.php';
                                 <div class="col-md-6 mt-lg-4 pl-lg-5">
                                     <div class="form-group">
                                         <label for="lastname">Lastname :</label>
-                                        <input type="lastname" class="form-control" id="lastname" placeholder="Vador"
-                                            name="lastname" value="<?=$_POST['lastname'] ?? "" ?>" />
+                                        <input type="lastname" class="form-control <?= (isset($_POST['submit']) ? (empty($_POST['lastname']) ? "is-invalid" : "") : "") ?> <?= (isset($_POST['submit']) && !empty($_POST['lastname']) ? ($regExLastname == false ? "is-invalid" : "is-valid") : "") ?>
+" id="lastname" placeholder="Vador" name="lastname" value="<?=$_POST['lastname'] ?? "" ?>" />
 
                                         <!-- LASTNAME ERROR -->
                                         <?php emptyField('lastname'); invalidRegEx('lastname') ?>
@@ -80,7 +80,7 @@ include 'form.php';
                                     <label for="lastname" class="">Gender :</label>
                                     <div class="gender">
                                         <div class="form-group mt-md-2">
-                                            <div class="form-check checkbox-info form-check-inline">
+                                            <div class="form-check checkbox-info form-check-inline ">
                                                 <input class="form-check-input" type="radio" id="gender" value="male"
                                                     name="gender" />
                                                 <label class="form-check-label" for="gender">Male</label>
@@ -105,8 +105,9 @@ include 'form.php';
                                 <div class="col-md-6 mb-lg-5 pl-lg-5">
                                     <div class="form-group">
                                         <label for="email">Email :</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Dark@Vador.com"
-                                            name="email" value="<?=$_POST['email'] ?? "" ?>" />
+                                        <input type="email" class="form-control <?= (isset($_POST['submit']) ? (empty($_POST['email']) ? "is-invalid" : "") : "") ?> <?= (isset($_POST['submit']) ? (!empty($_POST['email']) && filter_var($emailSanitize, FILTER_VALIDATE_EMAIL) === false ||
+$emailSanitize != $email ? "is-invalid" : "is-valid") : "")?>" id="email" placeholder="Dark@Vador.com" name="email"
+                                            value="<?=$_POST['email'] ?? "" ?>" />
 
                                         <!-- EMAIL ERROR -->
                                         <?php emptyField('email'); invalidEmail('email'); ?>
@@ -117,7 +118,9 @@ include 'form.php';
                             <div class="form-row mb-lg-2">
                                 <div class="col-md-6 mb-3 mb-lg-5 pr-lg-5">
                                     <label for="country">Country :</label>
-                                    <select class="custom-select" name="country" id="country">
+                                    <select
+                                        class="custom-select <?= (isset($_POST['submit']) ? (empty($_POST['country']) ? "is-invalid" : "is-valid") : "") ?>"
+                                        name="country" id="country">
                                         <option selected disabled>Select your country</option>
                                         <option value="AF">Afghanistan</option>
                                         <option value="AL">Albania</option>
@@ -375,10 +378,14 @@ include 'form.php';
 
                                 <div class="col-md-6 mb-3 mb-lg-5 pl-lg-5">
                                     <label for="subject">Subject :</label>
-                                    <select class="custom-select" name="subject" id="subject">
+                                    <select
+                                        class="custom-select <?= (isset($_POST['submit']) ? (empty($_POST['subject']) ? "is-invalid" : "is-valid") : "") ?>"
+                                        name="subject" id="subject">
                                         <option selected>Others</option>
-                                        <option value="1">Job</option>
-                                        <option value="2">Assistance</option>
+                                        <option value="1">Job
+                                        </option>
+                                        <option value="2">Assistance
+                                        </option>
                                     </select>
 
                                     <!-- SUBJECT ERROR -->
@@ -388,8 +395,9 @@ include 'form.php';
                             </div>
                             <div class="form-group mb-lg-4">
                                 <label for="info">More information :</label>
-                                <textarea class="form-control" id="info" rows="4"
-                                    name="info"><?=htmlentities($_POST['info'])?></textarea>
+                                <textarea
+                                    class="form-control <?= (isset($_POST['submit']) ? (empty($_POST['info']) ? "is-invalid" : "") : "") ?>"
+                                    id="info" rows="4" name="info"><?=htmlentities($_POST['info'])?></textarea>
 
                                 <!-- INFO ERROR -->
                                 <?php emptyField('info'); invalidString('info', $info); ?>

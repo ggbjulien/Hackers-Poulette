@@ -2,8 +2,16 @@ $darkColor: #303030;
 $lightColor: #fff;
 $blueColor: #15c5bd;
 
+@font-face {
+  font-family: "Bellota";
+  src: url("fonts/Bellota-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: $darkColor;
+  font-family: "Bellota";
   & #card {
     background-color: $lightColor;
   }
