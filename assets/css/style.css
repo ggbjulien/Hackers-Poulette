@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Bellota-Bold";
+  src: url("fonts/Bellota-Bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   background-color: #303030;
   font-family: "Bellota";
@@ -12,6 +19,11 @@ body {
 
 body #card {
   background-color: #fff;
+}
+
+h3,
+label {
+  font-family: "Bellota-Bold";
 }
 
 .fab {
