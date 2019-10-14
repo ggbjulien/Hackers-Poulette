@@ -407,6 +407,16 @@ $emailSanitize != $email ? "is-invalid" : "is-valid") : "")?>" id="email" placeh
                             <div class=" text-center">
                                 <input class="btn btn-primary mb-3" type="submit" value="Submit" name="submit">
                             </div>
+                            <div class="text-center">
+                                <label id="hpLabel">Leave this field empty</label>
+                                <input name="phoneNumber48938483" type="text" id="hpInput" autocomplete="off">
+                            </div>
+                            <?php honeyPot(); ?>
+                            <script>
+                            document.getElementById('hpInput').style.display = "none";
+                            document.getElementById('hpLabel').style.display = "none";
+                            </script>
+
                         </form>
                     </div>
                 </div>

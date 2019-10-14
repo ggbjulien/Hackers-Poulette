@@ -8,13 +8,21 @@ $country = $_POST['country'];
 $subject = $_POST['subject'];
 $info = $_POST['info'];
 
+
 $regExFirstname = preg_match("/^[a-zA-Z '.-]*$/", $firstname);
 $regExLastname = preg_match("/^[a-zA-Z '.-]*$/", $lastname);
 
 $emailSanitize = filter_var($email, FILTER_SANITIZE_EMAIL);
 
 
-
+function honeyPot() {
+    if(isset($_POST['submit'])){
+        if (!empty($_POST['phoneNumber48938483'])) {
+            // This is a spam robot
+            echo "NICE TRY BROOOOO <3";
+        }
+    }
+}
 
 
 

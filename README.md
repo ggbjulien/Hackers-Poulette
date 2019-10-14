@@ -1,6 +1,6 @@
 # Hackers-Poulette
 
-Formulary challenge for training our php skills.
+Formulary challenge for improve our php skills.
 
 - [WebPage](https://hackerspoulettebros.herokuapp.com/)
 
@@ -10,11 +10,10 @@ Formulary challenge for training our php skills.
 
 The website is responsive and was designed for mobile first.
 
-
 ## Mock-Up
 
-<img src="assets/img/mobile.png" width="50%" height="50%"></img> 
-<img src="assets/img/tablet.png" width="50%" height="50%"></img> 
+<img src="assets/img/mobile.png" width="50%" height="50%"></img>
+<img src="assets/img/tablet.png" width="50%" height="50%"></img>
 <img src="assets/img/desktop.png" width="50%" height="50%"></img>
 
 ## Built With
@@ -34,5 +33,4 @@ The website is responsive and was designed for mobile first.
 
 ## Change Logs
 
-- Last Update : 11 october 2019
-
+- Last Update : 14 october 2019
